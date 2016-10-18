@@ -19,11 +19,11 @@ its package manager (npm) installed.  You can get them from [http://nodejs.org/]
 
 ### Clone angular-seed
 
-Clone the angular-seed repository using [git][git]:
+Clone the angular-seed repository using [git]:
 
 ```
 git clone https://github.com/tiagocovas/surveyMe.git
-cd survey-me
+cd surveyMe
 ```
 
 If you just want to start a new project without the angular-seed commit history then you can do:
