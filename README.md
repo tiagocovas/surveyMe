@@ -2,7 +2,8 @@
 
 Survey Me it's finally here. A web application for curious people who like to share their preferences with the rest of the world.
 
-With the kind sponsorship of [Bliss Applications](http://www.bliss.pt/) and the helpful skeleton of [angular-seed/](https://github.com/angular/angular-seed).
+With the kind sponsorship of [Bliss Applications](http://www.bliss.pt/) and the helpful skeleton of [angular-seed](https://github.com/angular/angular-seed), Survey Me could finally see daylight.
+
 
 ## Getting Started
 
@@ -21,14 +22,14 @@ its package manager (npm) installed.  You can get them from [http://nodejs.org/]
 Clone the angular-seed repository using [git][git]:
 
 ```
-git clone https://github.com/tiagocovas/survey-me.git
+git clone https://github.com/tiagocovas/surveyMe.git
 cd survey-me
 ```
 
 If you just want to start a new project without the angular-seed commit history then you can do:
 
 ```bash
-git clone --depth=1 https://github.com/tiagocovas/survey-me.git <your-project-name>
+git clone --depth=1 https://github.com/tiagocovas/surveyMe.git
 ```
 
 The `depth=1` tells git to only pull down one commit worth of historical data.
@@ -37,9 +38,6 @@ The `depth=1` tells git to only pull down one commit worth of historical data.
 
 We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
 us manage and test the application.
-
-* We get the tools we depend upon via `npm`, the [node package manager][npm].
-* We get the angular code via `bower`, a [client-side code package manager][bower].
 
 We have preconfigured `npm` to automatically run `bower` so we can simply do:
 
@@ -63,7 +61,4 @@ npm start
 ```
 
 Now browse to the app at `http://localhost:8000/`.
-# surveyMe
-# surveyMe
-# surveyMe
-# survey-me
+
