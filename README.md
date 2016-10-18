@@ -17,7 +17,7 @@ You need git to clone the Survey repository. You can get git from
 We also use a number of node.js tools to initialize SurveyMe. You must have node.js and
 its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
 
-### Clone angular-seed
+### Clone surveyMe
 
 First, you'll want to clone the SurveyMe repository using [git], so you can have it on your computer:
 
