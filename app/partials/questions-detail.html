@@ -1,0 +1,13 @@
+<div ng-show="loading" class="load-back"><div class="preloader"></div></div>
+<div class="detail-body">
+  <img ng-src="{{question.image_url}}" class="question">
+
+  <h1>{{question.question}}</h1>
+  <h5>Question published at: {{question.published_at | date : 'yyyy-MM-dd HH:mm:ss'}}</h5>
+  <ul ng-repeat="choice in question.choices">
+    <button type="button" ng-click="updateQuestion(choice.choice)" class="btn btn-primary btn-vote" >{{choice.choice}}</button>
+    <span>{{choice.votes}} vote(s)</span>
+  </ul>
+  <p><a href="share/{{question.id}}" class="glyphicon glyphicon-envelope share-icon"></a></p>
+  <a href="questions" type="button" class="btn btn-default btn-back" style="color:black;">Back</a>
+</div>

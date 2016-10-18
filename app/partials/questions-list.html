@@ -1,0 +1,30 @@
+<div ng-show="loading" class="load-back"><div class="preloader"></div></div>
+<div class="container-fluid">
+  <div class="list-body">
+      <ul class="questions">
+        <div class="form-group">
+            <input type="text" ng-model="query" class="form-control input-lg" placeholder="What would you like to answer?">
+            <button type="button" ng-click="query = ''" class="btn btn-outline-secondary btn-md">Clear</button>
+        </div>
+
+        <li ng-repeat="question in questions | filter:query" ng-mouseover="hoverIn()" ng-mouseleave="hoverOut()">
+          <a href="questions/{{question.id}}">
+            <img ng-src="{{question.thumb_url}}" alt="{{question.id}}">
+            <div class="questionsDescription">
+              <h6>{{question.id}}:  {{question.question}}</h6>
+              <div ng-show="hoverEdit" class="choice-list">
+                <ul ng-repeat="choice in question.choices">
+                  <span >{{choice.choice}}</span>
+                </ul>
+                <p><a href="share/{{question.id}}" class="glyphicon glyphicon-envelope share-icon" ></a></p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <button ng-click="loadMore()" class="btn btn-outline-secondary btn-lg btn-load-more" style="width:100%">Load more</button>
+
+
+      </ul>
+    </div>
+  </div>
+</div>
